@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36895491242CD82000D09455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36895490242CD82000D09455 /* AppDelegate.swift */; };
+		36895493242CD82000D09455 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36895492242CD82000D09455 /* SceneDelegate.swift */; };
+		36895495242CD82000D09455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36895494242CD82000D09455 /* ViewController.swift */; };
+		36895498242CD82000D09455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36895496242CD82000D09455 /* Main.storyboard */; };
+		3689549A242CD82200D09455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36895499242CD82200D09455 /* Assets.xcassets */; };
+		3689549D242CD82200D09455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3689549B242CD82200D09455 /* LaunchScreen.storyboard */; };
+		368954A8242CD82200D09455 /* KinetoPrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368954A7242CD82200D09455 /* KinetoPrototypeTests.swift */; };
+		368954B3242CD82200D09455 /* KinetoPrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368954B2242CD82200D09455 /* KinetoPrototypeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		368954A4242CD82200D09455 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36895485242CD82000D09455 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3689548C242CD82000D09455;
+			remoteInfo = KinetoPrototype;
+		};
+		368954AF242CD82200D09455 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36895485242CD82000D09455 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3689548C242CD82000D09455;
+			remoteInfo = KinetoPrototype;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3689548D242CD82000D09455 /* KinetoPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinetoPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36895490242CD82000D09455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		36895492242CD82000D09455 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		36895494242CD82000D09455 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36895497242CD82000D09455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		36895499242CD82200D09455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3689549C242CD82200D09455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3689549E242CD82200D09455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		368954A3242CD82200D09455 /* KinetoPrototypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KinetoPrototypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		368954A7242CD82200D09455 /* KinetoPrototypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinetoPrototypeTests.swift; sourceTree = "<group>"; };
+		368954A9242CD82200D09455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		368954AE242CD82200D09455 /* KinetoPrototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KinetoPrototypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		368954B2242CD82200D09455 /* KinetoPrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinetoPrototypeUITests.swift; sourceTree = "<group>"; };
+		368954B4242CD82200D09455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3689548A242CD82000D09455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368954A0242CD82200D09455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368954AB242CD82200D09455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36895484242CD82000D09455 = {
+			isa = PBXGroup;
+			children = (
+				3689548F242CD82000D09455 /* KinetoPrototype */,
+				368954A6242CD82200D09455 /* KinetoPrototypeTests */,
+				368954B1242CD82200D09455 /* KinetoPrototypeUITests */,
+				3689548E242CD82000D09455 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3689548E242CD82000D09455 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3689548D242CD82000D09455 /* KinetoPrototype.app */,
+				368954A3242CD82200D09455 /* KinetoPrototypeTests.xctest */,
+				368954AE242CD82200D09455 /* KinetoPrototypeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3689548F242CD82000D09455 /* KinetoPrototype */ = {
+			isa = PBXGroup;
+			children = (
+				36895490242CD82000D09455 /* AppDelegate.swift */,
+				36895492242CD82000D09455 /* SceneDelegate.swift */,
+				36895494242CD82000D09455 /* ViewController.swift */,
+				36895496242CD82000D09455 /* Main.storyboard */,
+				36895499242CD82200D09455 /* Assets.xcassets */,
+				3689549B242CD82200D09455 /* LaunchScreen.storyboard */,
+				3689549E242CD82200D09455 /* Info.plist */,
+			);
+			path = KinetoPrototype;
+			sourceTree = "<group>";
+		};
+		368954A6242CD82200D09455 /* KinetoPrototypeTests */ = {
+			isa = PBXGroup;
+			children = (
+				368954A7242CD82200D09455 /* KinetoPrototypeTests.swift */,
+				368954A9242CD82200D09455 /* Info.plist */,
+			);
+			path = KinetoPrototypeTests;
+			sourceTree = "<group>";
+		};
+		368954B1242CD82200D09455 /* KinetoPrototypeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				368954B2242CD82200D09455 /* KinetoPrototypeUITests.swift */,
+				368954B4242CD82200D09455 /* Info.plist */,
+			);
+			path = KinetoPrototypeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3689548C242CD82000D09455 /* KinetoPrototype */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368954B7242CD82200D09455 /* Build configuration list for PBXNativeTarget "KinetoPrototype" */;
+			buildPhases = (
+				36895489242CD82000D09455 /* Sources */,
+				3689548A242CD82000D09455 /* Frameworks */,
+				3689548B242CD82000D09455 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KinetoPrototype;
+			productName = KinetoPrototype;
+			productReference = 3689548D242CD82000D09455 /* KinetoPrototype.app */;
+			productType = "com.apple.product-type.application";
+		};
+		368954A2242CD82200D09455 /* KinetoPrototypeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368954BA242CD82200D09455 /* Build configuration list for PBXNativeTarget "KinetoPrototypeTests" */;
+			buildPhases = (
+				3689549F242CD82200D09455 /* Sources */,
+				368954A0242CD82200D09455 /* Frameworks */,
+				368954A1242CD82200D09455 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				368954A5242CD82200D09455 /* PBXTargetDependency */,
+			);
+			name = KinetoPrototypeTests;
+			productName = KinetoPrototypeTests;
+			productReference = 368954A3242CD82200D09455 /* KinetoPrototypeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		368954AD242CD82200D09455 /* KinetoPrototypeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368954BD242CD82200D09455 /* Build configuration list for PBXNativeTarget "KinetoPrototypeUITests" */;
+			buildPhases = (
+				368954AA242CD82200D09455 /* Sources */,
+				368954AB242CD82200D09455 /* Frameworks */,
+				368954AC242CD82200D09455 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				368954B0242CD82200D09455 /* PBXTargetDependency */,
+			);
+			name = KinetoPrototypeUITests;
+			productName = KinetoPrototypeUITests;
+			productReference = 368954AE242CD82200D09455 /* KinetoPrototypeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36895485242CD82000D09455 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Shutaro Aoyama";
+				TargetAttributes = {
+					3689548C242CD82000D09455 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					368954A2242CD82200D09455 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 3689548C242CD82000D09455;
+					};
+					368954AD242CD82200D09455 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 3689548C242CD82000D09455;
+					};
+				};
+			};
+			buildConfigurationList = 36895488242CD82000D09455 /* Build configuration list for PBXProject "KinetoPrototype" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36895484242CD82000D09455;
+			productRefGroup = 3689548E242CD82000D09455 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3689548C242CD82000D09455 /* KinetoPrototype */,
+				368954A2242CD82200D09455 /* KinetoPrototypeTests */,
+				368954AD242CD82200D09455 /* KinetoPrototypeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3689548B242CD82000D09455 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3689549D242CD82200D09455 /* LaunchScreen.storyboard in Resources */,
+				3689549A242CD82200D09455 /* Assets.xcassets in Resources */,
+				36895498242CD82000D09455 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368954A1242CD82200D09455 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368954AC242CD82200D09455 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36895489242CD82000D09455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36895495242CD82000D09455 /* ViewController.swift in Sources */,
+				36895491242CD82000D09455 /* AppDelegate.swift in Sources */,
+				36895493242CD82000D09455 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3689549F242CD82200D09455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368954A8242CD82200D09455 /* KinetoPrototypeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368954AA242CD82200D09455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368954B3242CD82200D09455 /* KinetoPrototypeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		368954A5242CD82200D09455 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3689548C242CD82000D09455 /* KinetoPrototype */;
+			targetProxy = 368954A4242CD82200D09455 /* PBXContainerItemProxy */;
+		};
+		368954B0242CD82200D09455 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3689548C242CD82000D09455 /* KinetoPrototype */;
+			targetProxy = 368954AF242CD82200D09455 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		36895496242CD82000D09455 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36895497242CD82000D09455 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3689549B242CD82200D09455 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3689549C242CD82200D09455 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		368954B5242CD82200D09455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		368954B6242CD82200D09455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		368954B8242CD82200D09455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E6247TCYCA;
+				INFOPLIST_FILE = KinetoPrototype/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.bluemountain.KinetoPrototype;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		368954B9242CD82200D09455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E6247TCYCA;
+				INFOPLIST_FILE = KinetoPrototype/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.bluemountain.KinetoPrototype;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		368954BB242CD82200D09455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E6247TCYCA;
+				INFOPLIST_FILE = KinetoPrototypeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.bluemountain.KinetoPrototypeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KinetoPrototype.app/KinetoPrototype";
+			};
+			name = Debug;
+		};
+		368954BC242CD82200D09455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E6247TCYCA;
+				INFOPLIST_FILE = KinetoPrototypeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.bluemountain.KinetoPrototypeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KinetoPrototype.app/KinetoPrototype";
+			};
+			name = Release;
+		};
+		368954BE242CD82200D09455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E6247TCYCA;
+				INFOPLIST_FILE = KinetoPrototypeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.bluemountain.KinetoPrototypeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KinetoPrototype;
+			};
+			name = Debug;
+		};
+		368954BF242CD82200D09455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E6247TCYCA;
+				INFOPLIST_FILE = KinetoPrototypeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.bluemountain.KinetoPrototypeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KinetoPrototype;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36895488242CD82000D09455 /* Build configuration list for PBXProject "KinetoPrototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368954B5242CD82200D09455 /* Debug */,
+				368954B6242CD82200D09455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		368954B7242CD82200D09455 /* Build configuration list for PBXNativeTarget "KinetoPrototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368954B8242CD82200D09455 /* Debug */,
+				368954B9242CD82200D09455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		368954BA242CD82200D09455 /* Build configuration list for PBXNativeTarget "KinetoPrototypeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368954BB242CD82200D09455 /* Debug */,
+				368954BC242CD82200D09455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		368954BD242CD82200D09455 /* Build configuration list for PBXNativeTarget "KinetoPrototypeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368954BE242CD82200D09455 /* Debug */,
+				368954BF242CD82200D09455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36895485242CD82000D09455 /* Project object */;
+}
