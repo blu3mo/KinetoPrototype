@@ -17,12 +17,11 @@ class ViewController: UIViewController {
     var currentDevice: AVCaptureDevice?
     var videoOutput : AVCaptureVideoDataOutput?
     var cameraPreviewLayer : AVCaptureVideoPreviewLayer?
-    
-    var timer = Timer()
 
     @IBOutlet weak var fpsSlider: UISlider!
     @IBOutlet weak var previewImageView: UIImageView!
     @IBOutlet weak var currentFpsLabel: UILabel!
+    @IBOutlet weak var currentDelayLabel: UILabel!
     
     var pastImages: [UIImage] = []
     
@@ -33,7 +32,8 @@ class ViewController: UIViewController {
         setupInputOutput()
         captureSession.startRunning()
         
-        runTimer(fps: 30.0)
+        runDelayLabelTimer()
+        runFrameTimer(fps: 30.0)
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,27 +43,36 @@ class ViewController: UIViewController {
     
     
     @IBAction func fpsValueChanged(_ sender: UISlider) {
-        runTimer(fps: sender.value)
+        runFrameTimer(fps: sender.value)
     }
     
-    func runTimer(fps: Float) {
+    var frameTimer = Timer()
+    func runFrameTimer(fps: Float) {
         currentFpsLabel.text = String(format: "x%.3f", fps/30)
-        timer.invalidate()
-        timer = Timer.scheduledTimer(withTimeInterval: TimeInterval((1/fps)), repeats: true, block: { (timer) in
+        frameTimer.invalidate()
+        frameTimer = Timer.scheduledTimer(withTimeInterval: TimeInterval((1/fps)), repeats: true, block: { (timer) in
             if self.pastImages.count > 0 {
-                do {
-                    try self.previewImageView.image = self.pastImages.first //FIX: EXC_BAD_ACCESS起こる
-                    self.pastImages.remove(at: 0)
-                } catch {
-                    print("frame update error")
-                }
+                try? self.previewImageView.image = self.pastImages.first //FIX: EXC_BAD_ACCESS起こる
+                self.pastImages.remove(at: 0)
             }
+        })
+    }
+    
+    var delayLabelTimer = Timer()
+    func runDelayLabelTimer() {
+        delayLabelTimer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true, block: { (timer) in
+            self.currentDelayLabel.text = String(format: "%.3f sec. late", Float(self.pastImages.count)/30.0)
         })
     }
     
     @IBAction func backToTheFuture(_ sender: Any) {
         pastImages = []
-        runTimer(fps: 30)
+        runFrameTimer(fps: fpsSlider.value)
+    }
+    
+    @IBAction func resetSpeed(_ sender: Any) {
+        fpsSlider.value = 30
+        runFrameTimer(fps: 30)
     }
 }
 
@@ -118,6 +127,7 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         let image = imageFromSampleBuffer(sampleBuffer: sampleBuffer)
         self.pastImages.append(image)
+        //print(ObjectIdentifier(self.pastImages.last ?? UIImage()).hashValue)
     }
     
     func imageFromSampleBuffer(sampleBuffer :CMSampleBuffer) -> UIImage {

@@ -18,33 +18,60 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cda-Xg-qAe">
                                 <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joT-3B-A1K">
-                                <rect key="frame" x="910" y="750" width="150" height="40"/>
-                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="2A0-AP-MIz"/>
-                                    <constraint firstAttribute="width" constant="150" id="l0Y-78-ef1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Back to the future">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="backToTheFuture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6TV-R7-A0e"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fh9-xR-ntM">
-                                <rect key="frame" x="355.5" y="703" width="369" height="87"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qYH-WI-ezH">
+                                <rect key="frame" x="910" y="700" width="150" height="90"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb0-RL-XBw">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZo-bj-bHc">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="Teh-ux-JUf"/>
+                                            <constraint firstAttribute="height" constant="40" id="nVY-PI-bDp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Reset Speed">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resetSpeed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vlV-F0-iWx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joT-3B-A1K">
+                                        <rect key="frame" x="0.0" y="50" width="150" height="40"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2A0-AP-MIz"/>
+                                            <constraint firstAttribute="width" constant="150" id="l0Y-78-ef1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Back to the future">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backToTheFuture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6TV-R7-A0e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fh9-xR-ntM">
+                                <rect key="frame" x="355.5" y="674.5" width="369" height="115.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 sec late" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4P-FB-QQr">
                                         <rect key="frame" x="0.0" y="0.0" width="369" height="20.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="157" translatesAutoresizingMaskIntoConstraints="NO" id="Suj-tU-z5z">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb0-RL-XBw">
                                         <rect key="frame" x="0.0" y="28.5" width="369" height="20.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="157" translatesAutoresizingMaskIntoConstraints="NO" id="Suj-tU-z5z">
+                                        <rect key="frame" x="0.0" y="57" width="369" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="x0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qES-d0-2m2">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20.5"/>
@@ -70,7 +97,7 @@
                                         </subviews>
                                     </stackView>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="0.0" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="UHo-a9-QCa">
-                                        <rect key="frame" x="-2" y="57" width="373" height="31"/>
+                                        <rect key="frame" x="-2" y="85.5" width="373" height="31"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="369" id="zGo-hx-Ji7"/>
@@ -88,14 +115,15 @@
                             <constraint firstItem="cda-Xg-qAe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9vU-Qd-poh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fh9-xR-ntM" secondAttribute="bottom" constant="20" id="EgF-wd-5sr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cda-Xg-qAe" secondAttribute="trailing" id="FkN-44-WW5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qYH-WI-ezH" secondAttribute="trailing" constant="20" id="OUG-dQ-oqV"/>
                             <constraint firstItem="cda-Xg-qAe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XOr-fr-Mfw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qYH-WI-ezH" secondAttribute="bottom" constant="20" id="bdB-ed-gaT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cda-Xg-qAe" secondAttribute="bottom" id="mTw-tP-NSU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="joT-3B-A1K" secondAttribute="bottom" constant="20" id="rWu-4y-1Gx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="joT-3B-A1K" secondAttribute="trailing" constant="20" id="yQ5-w8-hFq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="currentDelayLabel" destination="p4P-FB-QQr" id="wBh-ve-RsG"/>
                         <outlet property="currentFpsLabel" destination="jb0-RL-XBw" id="XOf-86-VE5"/>
                         <outlet property="fpsSlider" destination="UHo-a9-QCa" id="2pA-VY-HTQ"/>
                         <outlet property="previewImageView" destination="cda-Xg-qAe" id="XK1-eP-3rr"/>
